@@ -54,8 +54,9 @@ Incomplete implementation of DLists; it currently supports mutable list headers 
 
 However this DOES execute neo4j cypher queries via bolt.
 
-# Cypher queries
+# User actions and cypher queries
 
 - [setup](./setup.md)
 - [retrieval](./retrieval.md)
+- [add relationship](./add-relationship.md)
 
