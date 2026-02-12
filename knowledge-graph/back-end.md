@@ -13,7 +13,7 @@ For now, during the early development phase, cypher queries will be delivered vi
 
 Bolt access: `bolt://testorly.nosfabrica.com` or `bolt+s://testorly.nosfabrica.com` (we will probably want to spin up a new Orly instance at a url like `https://testorly-knowledge-graph.nosfabrica.com`)
 
-Once enabled, I will test the connection here: [Brainstorm Knowledge Graph front end starter prototype, test page 7](https://brainstorm-knowledge-graph.vercel.app/#/helloWorld/testPage7). When I run this app locally, bolt (not bolt+s) works. But the deployed app requires SSL/TLS.
+Once enabled, I will test the connection from my Brainstorm Knowledge Graph front end starter prototype, [test page 7](https://brainstorm-knowledge-graph.vercel.app/#/helloWorld/testPage7). When I run this app locally, bolt (not bolt+s) works. But the deployed app requires SSL/TLS.
 
 I managed to enable SSL/TLS for connections to `bolt+s://straycat.brainstorm.social:7687` on my Brainstorm 1.0 prototype (see [straycat.brainstorm.social](https://straycat.brainstorm.social) by making the following edits to `/etc/neo4j/neo4j.conf`:
 
@@ -42,7 +42,7 @@ Then restart neo4j.
 
 However, I reverted the changes after noting that it broke some features of Brainstorm 1.0, so check to make sure this doesn't break Orly.
 
-### 2. Pass cypher queries through API (later)
+### 2. Pass cypher queries through API (soon but not needed immediately)
 
 For better security, we will want to protect the neo4j database behind an API that will check nostr AUTH. Not a priority for now.
 
