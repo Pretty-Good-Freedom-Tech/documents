@@ -5,6 +5,28 @@ Brainstorm Knowledge Graph: Front end
 
 See the [products page](../products.md) for a description of the overall purpose of Brainstorm products and how they fit together to serve a unified purpose.
 
+# Features
+
+Users will be able to 
+- create, edit, share, and explore simple lists
+- flesh out simple lists into structured lists, object-oriented lists, and concepts
+- integrate concepts vertically and horizontally
+
+One of the most anticipated milestones will be the demonstration of loose consensus, whereby a community develops conventions / arrives at consensus over a variety of things in a quick, efficient, and fully self-sovereign manner.
+
+# Development
+
+The design of the Knowledge Graph will be driven by user stories, each of which is a problem with a WoT-based solution:
+- There are too many impersonators, spammers, and other bad actors on nostr
+- I can't distinguish a real nostr user from a bot
+- I want an always-up-to-date list of Nostr Apps
+- My repo is flooded with a deluge of PRs and issues, and I need to know which ones are worth my time and attention.
+- I want a list of songs to play on my podcast, Plebchain Radio
+- Which bitcoin hardware wallets are the best?
+
+... This list could go on and on. 
+Get a high end mac Studio, set up OpenClaw, create a team of agents, flesh out each User Story, each of which will include detailed steps taken by users on the front end and what exactly will be happening on the back end. Each User Story will contribute to a wireframe, the tech stack, the design of architecture. Once all of these are sufficiently fleshed out, the team of agents will proceed with building the product.
+
 # NIPs
 
 The starting point and basic building block is the [Decentralized Lists](https://nostrhub.io/naddr1qvzqqqrcvypzpef89h53f0fsza2ugwdc3e54nfpun5nxfqclpy79r6w8nxsk5yp0qyt8wumn8ghj7un9d3shjtnwdaehgu3wvfskueqqzdjx2cm9de68yctvd9ax2epdd35hxarn4nteah) (DLists) Custom NIP.
