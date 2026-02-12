@@ -1,4 +1,4 @@
-Brainstorm Knowledge Graph: Setup
+Brainstorm Knowledge Graph: Back End
 =====
 
 This document provides an overview of scripts that will lay the groundwork to set up a Brainstorm Knowledge Graph inside a nostr neo4j database (Orly). For the sake of this document, we will refer to this script as *brainstorm_neo4j_knowledge_graph_initialization*, or *bnkgi* for short. 
