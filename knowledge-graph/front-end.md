@@ -24,7 +24,7 @@ Under the hood, user actions will be effected via:
 
 The starting point and basic building block is the [Decentralized Lists](https://nostrhub.io/naddr1qvzqqqrcvypzpef89h53f0fsza2ugwdc3e54nfpun5nxfqclpy79r6w8nxsk5yp0qyt8wumn8ghj7un9d3shjtnwdaehgu3wvfskueqqzdjx2cm9de68yctvd9ax2epdd35hxarn4nteah) (DLists) Custom NIP.
 
-For a list of Custom NIPs that build upon DLists, including several still in draft form, see [this link](https://github.com/Pretty-Good-Freedom-Tech/brainstorm-references/blob/main/references.md)
+For a list of Custom NIPs that build upon DLists, including several still in draft form, see [this list of references](https://github.com/Pretty-Good-Freedom-Tech/brainstorm-references/blob/main/references.md).
 
 # Development
 
