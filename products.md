@@ -22,7 +22,7 @@ Customers will pay for their scores to be calculated. Different tiers of service
 - greater number of updates-on-demand
 - more options for fine-tuning parameters (3 presets available for the free tier; paid tiers can make their own presets)
 
-# 2. [./knowledge-graph/back-end.md](Brainstorm: Knowledge Graph (back end graph db))
+# 2. [Brainstorm: Knowledge Graph (back end graph db)](./knowledge-graph/back-end.md)
 
 This differs from Brainstorm: Grapevine product in several important ways:
 - personalized; one instance, one user
