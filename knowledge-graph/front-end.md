@@ -14,9 +14,17 @@ Users will be able to
 
 One of the most anticipated milestones will be the demonstration of loose consensus, whereby a community develops conventions / arrives at consensus over a variety of things in a quick, efficient, and fully self-sovereign manner.
 
+# Architecture
+
+Under the hood, user actions will be effected via:
+- create, edit, and delete nostr events (major focus on kinds 9998, 9999, 39998, 39999 as per DLists Custom NIP, but all other event kinds will be subject to usage) that will be stored in a variety of nostr relays, community and personalized
+- make changes to the user's neo4j graph database. During the development phase, the associated cypher queries will be written on the front end and transmitted via bolt+s, but over time the direct management of cypher queries may be shifted to the back end for a variety of reasons, including better security.
+
 # NIPs
 
 The starting point and basic building block is the [Decentralized Lists](https://nostrhub.io/naddr1qvzqqqrcvypzpef89h53f0fsza2ugwdc3e54nfpun5nxfqclpy79r6w8nxsk5yp0qyt8wumn8ghj7un9d3shjtnwdaehgu3wvfskueqqzdjx2cm9de68yctvd9ax2epdd35hxarn4nteah) (DLists) Custom NIP.
+
+For a list of Custom NIPs that build upon DLists, including several still in draft form, see [this link](https://github.com/Pretty-Good-Freedom-Tech/brainstorm-references/blob/main/references.md)
 
 # Development
 
