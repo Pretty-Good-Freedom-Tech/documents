@@ -1,6 +1,10 @@
 Brainstorm Knowledge Graph: Front end
 =====
 
+# Background
+
+See the [products page](../products.md) for a description of the overall purpose of Brainstorm products and how they fit together to serve a unified purpose.
+
 # NIPs
 
 The starting point and basic building block is the [Decentralized Lists](https://nostrhub.io/naddr1qvzqqqrcvypzpef89h53f0fsza2ugwdc3e54nfpun5nxfqclpy79r6w8nxsk5yp0qyt8wumn8ghj7un9d3shjtnwdaehgu3wvfskueqqzdjx2cm9de68yctvd9ax2epdd35hxarn4nteah) (DLists) Custom NIP.
