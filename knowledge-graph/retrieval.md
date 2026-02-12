@@ -26,26 +26,56 @@ RETURN classPath
 # Return all Irish Setters
 
 ```
+MATCH classPath = (listHeader)-[:IS_THE_CONCEPT_FOR]->(superset:Superset)-[:IS_A_SUPERSET_OF *0..5]->(subset:Set)-[:HAS_ELEMENT]->(dog)
+WHERE listHeader.uuid = "39998:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:b08502ed-9adf-42b4-9e10-ef3090179346"
+AND subset.uuid = '<uuid for the set of Irish Setters>'
+RETURN dog
 ```
+
+(this query may return duplicate results for the same dog; probably needs to be edited)
 
 # Return all Musicians
 
 ```
+MATCH classPath = (listHeader)-[:IS_THE_CONCEPT_FOR]->(superset:Superset)-[:IS_A_SUPERSET_OF *0..5]->()-[:HAS_ELEMENT]->(musician)
+WHERE listHeader.uuid = '<uuid for musicians list header>'
+RETURN musician
 ```
 
 # Return all jazz Musicians
 
 ```
+MATCH classPath = (listHeader)-[:IS_THE_CONCEPT_FOR]->(superset:Superset)-[:IS_A_SUPERSET_OF *0..5]->(subset)-[:HAS_ELEMENT]->(musician)
+WHERE listHeader.uuid = '<uuid for musicians list header>'
+AND subset.uuid = '<uuid for the set of all jazz musicians>'
+RETURN musician
 ```
 
 # Return all jazz Musicians authored by trusted pubkey
 
 ```
+MATCH classPath = (listHeader)-[:IS_THE_CONCEPT_FOR]->(superset:Superset)-[:IS_A_SUPERSET_OF *0..5]->(subset)-[:HAS_ELEMENT]->(musician)
+WHERE listHeader.uuid = '<uuid for musicians list header>'
+AND subset.uuid = '<uuid for the set of all jazz musicians>'
+OPTIONAL MATCH (author:NostrUser)-[:AUTHORED_BY]->(musician)
+WHERE author.influence_user_pubkey > 0.1
+RETURN musician
 ```
+
+(not sure if that syntax is correct)
 
 # Return all jazz Musicians authored by trusted pubkey AND upvoted by at least one trusted pubkey
 
 ```
+MATCH classPath = (listHeader)-[:IS_THE_CONCEPT_FOR]->(superset:Superset)-[:IS_A_SUPERSET_OF *0..5]->(subset)-[:HAS_ELEMENT]->(musician)
+WHERE listHeader.uuid = '<uuid for musicians list header>'
+AND subset.uuid = '<uuid for the set of all jazz musicians>'
+OPTIONAL MATCH (author:NostrUser)-[:AUTHORED_BY]->(musician)
+WHERE author.influence_user_pubkey > 0.1
+OPTIONAL MATCH (rater:NostrUser)-[:AUTHORED_BY]->(reaction:Event {kind: 7})-[:TAGGED_WITH]->(Tag {type: 'p'})-[REFERENCES]->(musician)
+WHERE reaction.content = "+" AND rater.influence_user_pubkey > 0.15
+RETURN musician
 ```
 
-                
+(This query is definitely not yet correct -- still needs work)
+
