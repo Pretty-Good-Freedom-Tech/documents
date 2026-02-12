@@ -27,10 +27,10 @@ This differs from Brainstorm: Grapevine product in several important ways:
 - the expectation is that it will contain private data and preferences
 - the graph database is expected to be much smaller, require less memory, therefore more affordable for average users. Although optionally, they can get as large as the user wants/needs.
 
-## Tech stack
+## Tech stack / architecture
 - neo4j
 - unclear whether this should be paired with a non-graph, high performance key-value database like LMDB
-- Current plan is for the front end to be minimal, like the strfry front end. Day to day user access will be via a separate app or client -- see Product #3 (below).
+- Current plan is for the front end to be minimal, like the strfry front end. Day to day user access will be via a separate app or client -- see Product #3 (below). (This architecture is subject to change)
 
 ## Progress
 - several partial prototypes exist but none were ever complete; the closest to completion was when I was still working on IPFS, prior to my switch to nostr in Dec 2022
