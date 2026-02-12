@@ -28,9 +28,14 @@ This differs from Brainstorm: Grapevine product in several important ways:
 - the graph database is expected to be much smaller, require less memory, therefore more affordable for average users. Although optionally, they can get as large as the user wants/needs.
 
 ## Tech stack / architecture
-- neo4j
+- lives on an always-connected device
+- neo4j, with data model as per the tapestry protocol
 - unclear whether this should be paired with a non-graph, high performance key-value database like LMDB
-- Current plan is for the front end to be minimal, like the strfry front end. Day to day user access will be via a separate app or client -- see Product #3 (below). (This architecture is subject to change)
+- Current plan is for the front end to be minimal, like the strfry front end, just lets you know it's up and running. Day to day user access will be via a separate app or client -- see Product #3 (below). (This architecture is subject to change)
+
+## Future development
+- could make versions that live on smartphones or other devices
+- may pair with local LLM that can have access to curated data, help user search through it, etc.
 
 ## Progress
 - several partial prototypes exist but none were ever complete; the closest to completion was when I was still working on IPFS, prior to my switch to nostr in Dec 2022
@@ -40,6 +45,5 @@ hosting, similar to the Relay Tools monetization strategy. Self-hostring is poss
 
 # 3. Brainstorm nostr client
 
-Purpose: front end for Product #2. 
+Purpose: front end for Product #2 (and maybe also for Product #1?). True nostr clients; web app, smartphone apps. 
 
-Not so much a product per se. This will be a true nostr client, pure front end, no back end, except that it will 
