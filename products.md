@@ -8,7 +8,7 @@ Current plan for a slate of products based on the Tapestry model.
 The Brainstorm suite of products provides the user with:
 
 `
-a personalized Nostr Knowledge Graph curated with the assistance of one's trusted, extended community. To do this, Brainstorm keeps track of your Grapevine. The Grapevine identifies who is the most trustworthy, in any given context, to help you curate content, facts, and information.
+a personalized Nostr Knowledge Graph curated with the assistance of one's trusted, extended community. To do this, Brainstorm keeps track of your Grapevine. Your Grapevine identifies who is the most trustworthy, in any given context, to help you curate content, facts, and information.
 `
 
 # 1. Brainstorm: Grapevine
