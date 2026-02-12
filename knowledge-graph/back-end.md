@@ -9,7 +9,7 @@ Tech stack: Orly
 
 ### 1. enable bolt+s on Orly (now)
 
-For now, during the early development phase, cypher queries will be delivered via the front end to the back end via bolt+s. This will be the easiest and quickest way to proceed.
+For now, during the early development phase, cypher queries will be delivered via the front end (see: [Brainstorm Knowledge Graph front end starter prototype](https://brainstorm-knowledge-graph.vercel.app)) to the back end via bolt+s. This will be the easiest and quickest way to proceed. The front end will require nostr log in via a whitelisted account.
 
 Bolt access: `bolt://testorly.nosfabrica.com` or `bolt+s://testorly.nosfabrica.com` (we will probably want to spin up a new Orly instance at a url like `https://testorly-knowledge-graph.nosfabrica.com`)
 
