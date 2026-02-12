@@ -7,7 +7,7 @@ Tech stack: Orly
 
 ## Modifications: 
 
-### enable bolt+s on Orly
+### 1. enable bolt+s on Orly (now)
 
 For now, during the early development phase, cypher queries will be delivered via the front end to the back end via bolt+s. This will be the easiest and quickest way to proceed.
 
@@ -40,15 +40,15 @@ Then restart neo4j.
 
 However, I reverted the changes after noting that it broke some features of Brainstorm 1.0, so check to make sure this doesn't break Orly.
 
-### 2. Pass cypher queries through API
+### 2. Pass cypher queries through API (later)
 
 For better security, we will want to protect the neo4j database behind an API that will check nostr AUTH. Not a priority for now.
 
-### 3. Automation
+### 3. Automation (later)
 
-We will eventually want to automate certain cypher queries from the back end to do things like check the knowledge graph for inconsistencies of the class thread rule, edit the 
+We will eventually want to automate certain cypher queries from the back end to do things like check the knowledge graph for inconsistencies of the class thread rule.
 
-### 4. Background processing
+### 4. Background processing (later)
 
 To improve the performance of retrieval of frequently-requested data, we may wish to set up automated tasks that run cypher queries and cache the results in a paired database -- maybe Badger. (Example: fetch all elements of the set: Jazz Musicians.) But this is not yet a priority. We may want to wait until optimization is actually needed, lest we spend time building optimizations that turn out to be unnecessary.
 
