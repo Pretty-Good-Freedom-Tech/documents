@@ -1,25 +1,19 @@
-Brainstorm Knowledge Graph: Back End
+Setup
 =====
 
-This document provides an overview of scripts that will lay the groundwork to set up a Brainstorm Knowledge Graph inside a nostr neo4j database (Orly). For the sake of this document, we will refer to this script as *brainstorm_neo4j_knowledge_graph_initialization*, or *bnkgi* for short. 
+This document provides an overview of cypher queries that take as input kinds 9998, 9999, 39998, 39999 events and turns them into a Knowledge Graph, as per the tapestry protocol.
 
 ## Overview
 
-The starting point for implementation of the tapestry protocol in nostr is the [Decentralized Lists](https://nostrhub.io/naddr1qvzqqqrcvypzpef89h53f0fsza2ugwdc3e54nfpun5nxfqclpy79r6w8nxsk5yp0qyt8wumn8ghj7un9d3shjtnwdaehgu3wvfskueqqzdjx2cm9de68yctvd9ax2epdd35hxarn4nteah) (DLists) Custom NIP. Preliminary implementations of DList, but without neo4j integration, can be found at Vinney's [WoT Sandbox](https://dlist-ui.netlify.app/) and [my Brainstorm: Knnowledge Graph front end app](https://brainstorm-knowledge-graph.vercel.app/#/dashboard) which currently supports mutable list headers and items (kinds 39998, 39999) but not immutable (kinds 9998, 9999). (Also, I was just starting to set up bolt access to neo4j -- see [test page 6](https://brainstorm-knowledge-graph.vercel.app/#/helloWorld/testPage6) and [test page 7](https://brainstorm-knowledge-graph.vercel.app/#/helloWorld/testPage7) -- and having success when run locally, but I need to use bolt+s to get the web version to work.)
+The cypher commands below make use of several parameters that can be adjusted via [user settings](https://brainstorm-knowledge-graph.vercel.app/#/settings).
 
-The primary functions of *bnkgi* are to update the neo4j database based on kinds 9998, 9999, 39998, 39999 events. To do this, we first must establish [several parameters](https://brainstorm-knowledge-graph.vercel.app/#/settings) Each kind 9999 and 39999 events with z-tag: `uuid_for_relationships` (a hardcoded parameter) encodes a single relationship of a specific `relationshipType` between two Event nodes. For each relationship, we will use neo4j cypher to `MERGE` the relationship into the neo4j database. 
-
-Either a command line and/ or an API endpoint can be set up to trigger execution of *bnkgi*. We can take care of the front end UX later. 
-
-## Relevant Custom NIPs:
-
-- [Decentralized Lists](https://nostrhub.io/naddr1qvzqqqrcvypzpef89h53f0fsza2ugwdc3e54nfpun5nxfqclpy79r6w8nxsk5yp0qyt8wumn8ghj7un9d3shjtnwdaehgu3wvfskueqqzdjx2cm9de68yctvd9ax2epdd35hxarn4nteah)
-- The Decentralized Lists of [relationships](https://dlist-ui.netlify.app/list.html?id=b99dcd95d06ccfcc713f6743fc4f5f0b10edce2ca0c14b84b8a83f7b55b98d62) and [relationship types](https://dlist-ui.netlify.app/list.html?id=73939923a9f13814c988d0df1dc4e859753c4d3ea7b8f515dc4f089274b155a9)
+Each kind 9999 and 39999 events with z-tag: `uuid_for_relationships` (a hardcoded parameter) encodes a single relationship of a specific `relationshipType` between two Event nodes. For each relationship, we will use neo4j cypher to `MERGE` the relationship into the neo4j database. 
 
 ## Prerequisites:
 
-- Before running *bnkgi*, neo4j must first be populated with the relevant data. How to do that will be outlined in a separate document. (In a nutshell: import all kinds 7, 9998, 9999, 39998, and 39999 events from a relay such as `wss://dcosl.brainstorm.world` into Orly, and make sure that data gets transmitted into neo4j as Event nodes in the standard fashion.)
-- As seen below, several `naddr` parameters are required and should be hardcoded. See [this page](https://www.notion.so/Settings-2e50dd16b665808db316db4a61a5d0a7?pvs=21) for the defaults.
+Before running *bnkgi*, neo4j must first be populated with the relevant data. How to do that will be outlined in a separate document. (In a nutshell: import all kinds 7, 9998, 9999, 39998, and 39999 events from a relay such as `wss://dcosl.brainstorm.world` into Orly, and make sure that data gets transmitted into neo4j as Event nodes in the standard fashion.)
+
+Note: we are deprecating `naddr` uuids in favor of `a-tag` uuids.
 
 # Create Knowledge Graph:
 
