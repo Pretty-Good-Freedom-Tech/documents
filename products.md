@@ -22,7 +22,7 @@ Customers will pay for their scores to be calculated. Different tiers of service
 - greater number of updates-on-demand
 - more options for fine-tuning parameters (3 presets available for the free tier; paid tiers can make their own presets)
 
-# 2. Brainstorm: Knowledge Graph
+# 2. [./knowledge-graph/back-end.md](Brainstorm: Knowledge Graph (back end graph db))
 
 This differs from Brainstorm: Grapevine product in several important ways:
 - personalized; one instance, one user
@@ -45,7 +45,7 @@ This differs from Brainstorm: Grapevine product in several important ways:
 ## NosFabrica monetization
 hosting, similar to the Relay Tools monetization strategy. Self-hostring is possible, as is the case for nostr relays, but as is the case for relays, many users may opt for hosting services.
 
-# 3. Brainstorm nostr client
+# 3. [./knowledge-graph/front-end.md](Brainstorm nostr client (front end access to the knowledge graph))
 
 Purpose: front end for Product #2 (and maybe also for Product #1?). True nostr clients; web app, smartphone apps. 
 
