@@ -53,3 +53,9 @@ However the Sandbox this does NOT integrate with neo4j in any fashion.
 Incomplete implementation of DLists; it currently supports mutable list headers and items (kinds 39998, 39999) but not immutable (kinds 9998, 9999). 
 
 However this DOES execute neo4j cypher queries via bolt.
+
+# Cypher queries
+
+- [setup](./setup.md)
+- [retrieval](./retrieval.md)
+
