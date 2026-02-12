@@ -17,7 +17,7 @@ Each of Brainstorm instance is intended to calculate of baseline GrapeRank score
 
 ## NosFabrica monetization
 
-Customers will pay for their scores to be calculated. Different tiers of service will exist:
+Customers will pay for their scores to be calculated. Paid tiers will provide:
 - more frequent automatic updates (weekly, daily, hourly, etc)
 - greater number of updates-on-demand
 - more options for fine-tuning parameters (3 presets available for the free tier; paid tiers can make their own presets)
