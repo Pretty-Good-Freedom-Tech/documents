@@ -42,15 +42,19 @@ Then restart neo4j.
 
 However, I reverted the changes after noting that it broke some features of Brainstorm 1.0, so check to make sure this doesn't break Orly.
 
-### 2. Pass cypher queries through API (soon but not needed immediately)
+### 2. Import NostrUser nodes and scores from Brainstorm: Grapevine (soon but not needed immediately)
+
+Suppose pk_Alice is a customer whose scores are calculated at https://testorly.nosfabrica.com, and she runs a personalized Brainstorm: Knowledge Graph back end at https://alice.brainstorm.world. The former has scores for lots of customers, the latter serves Alice and no one else. We will want a way to query the former, get a list of all NostrUser nodes and their influence scores from Alice's point of view, and add those nodes to Alice's Knowledge Graph. For an example of why this data is needed, see `Return all jazz Musicians authored by trusted pubkey` at [retrieval](./retrieval.md).
+
+### 3. Pass cypher queries through API (soon but not needed immediately)
 
 For better security, we will want to protect the neo4j database behind an API that will check nostr AUTH. Not a priority for now.
 
-### 3. Automation (later)
+### 4. Automation (later)
 
 We will eventually want to automate certain cypher queries from the back end to do things like check the knowledge graph for inconsistencies of the class thread rule.
 
-### 4. Background processing (later)
+### 5. Background processing (later)
 
 To improve the performance of retrieval of frequently-requested data, we may wish to set up automated tasks that run cypher queries and cache the results in a paired database -- maybe Badger. (Example: fetch all elements of the set: Jazz Musicians.) But this is not yet a priority. We may want to wait until optimization is actually needed, lest we spend time building optimizations that turn out to be unnecessary.
 
