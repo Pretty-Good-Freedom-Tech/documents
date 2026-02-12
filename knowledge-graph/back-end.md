@@ -11,6 +11,8 @@ Tech stack: Orly
 
 For now, during the early development phase, cypher queries will be delivered via the front end to the back end via bolt+s. This will be the easiest and quickest way to proceed.
 
+Bolt access: `bolt://testorly.nosfabrica.com` or `bolt+s://testorly.nosfabrica.com` (we will probably want to spin up a new Orly instance at a url like `https://testorly-knowledge-graph.nosfabrica.com`)
+
 Once enabled, I will test the connection here: [Brainstorm Knowledge Graph front end starter prototype, test page 7](https://brainstorm-knowledge-graph.vercel.app/#/helloWorld/testPage7). When I run this app locally, bolt (not bolt+s) works. But the deployed app requires SSL/TLS.
 
 I managed to enable SSL/TLS for connections to `bolt+s://straycat.brainstorm.social:7687` on my Brainstorm 1.0 prototype (see [straycat.brainstorm.social](https://straycat.brainstorm.social) by making the following edits to `/etc/neo4j/neo4j.conf`:
