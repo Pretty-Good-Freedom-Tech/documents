@@ -14,6 +14,10 @@ Users will be able to
 
 One of the most anticipated milestones will be the demonstration of loose consensus, whereby a community develops conventions / arrives at consensus over a variety of things in a quick, efficient, and fully self-sovereign manner.
 
+# NIPs
+
+The starting point and basic building block is the [Decentralized Lists](https://nostrhub.io/naddr1qvzqqqrcvypzpef89h53f0fsza2ugwdc3e54nfpun5nxfqclpy79r6w8nxsk5yp0qyt8wumn8ghj7un9d3shjtnwdaehgu3wvfskueqqzdjx2cm9de68yctvd9ax2epdd35hxarn4nteah) (DLists) Custom NIP.
+
 # Development
 
 The design of the Knowledge Graph will be driven by user stories, each of which is a problem with a WoT-based solution:
@@ -26,10 +30,6 @@ The design of the Knowledge Graph will be driven by user stories, each of which 
 
 ... This list could go on and on. 
 Get a high end mac Studio, set up OpenClaw, create a team of agents, flesh out each User Story, each of which will include detailed steps taken by users on the front end and what exactly will be happening on the back end. Each User Story will contribute to a wireframe, the tech stack, the design of architecture. Once all of these are sufficiently fleshed out, the team of agents will proceed with building the product.
-
-# NIPs
-
-The starting point and basic building block is the [Decentralized Lists](https://nostrhub.io/naddr1qvzqqqrcvypzpef89h53f0fsza2ugwdc3e54nfpun5nxfqclpy79r6w8nxsk5yp0qyt8wumn8ghj7un9d3shjtnwdaehgu3wvfskueqqzdjx2cm9de68yctvd9ax2epdd35hxarn4nteah) (DLists) Custom NIP.
 
 # Preliminary implementations
 
