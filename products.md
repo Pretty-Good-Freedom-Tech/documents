@@ -45,7 +45,7 @@ This differs from Brainstorm: Grapevine product in several important ways:
 ## NosFabrica monetization
 hosting, similar to the Relay Tools monetization strategy. Self-hostring is possible, as is the case for nostr relays, but as is the case for relays, many users may opt for hosting services.
 
-# 3. [./knowledge-graph/front-end.md](Brainstorm nostr client (front end access to the knowledge graph))
+# 3. [Brainstorm nostr client (front end access to the knowledge graph)](./knowledge-graph/front-end.md)
 
 Purpose: front end for Product #2 (and maybe also for Product #1?). True nostr clients; web app, smartphone apps. 
 
