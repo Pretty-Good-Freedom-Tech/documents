@@ -1,5 +1,7 @@
-products
+Products
 =====
+
+Current plan for a slate of products based on the Tapestry model.
 
 # 1. Brainstorm: Grapevine
 
