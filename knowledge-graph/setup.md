@@ -219,11 +219,3 @@ FOREACH (ignore IN CASE WHEN relType = 'ENUMERATES'   THEN [1] ELSE [] END |
 RETURN uuid_nodeFrom, relType, uuid_nodeTo
 ```
 
-That’s it!
-
-# Future Tasks
-
-Future tasks will include:
-
-- A Settings/Control Panel so that the Brainstorm owner/operator can edit parameters
-- Management of the Knowledge Graph to make sure basic Knowledge Graph rules are enforced.
