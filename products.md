@@ -49,3 +49,5 @@ hosting, similar to the Relay Tools monetization strategy. Self-hostring is poss
 
 Purpose: front end for Product #2 (and maybe also for Product #1?). True nostr clients; web app, smartphone apps. 
 
+Why separate the front end (Product 3) from the back end (Product 2)? For the same reasons that relays and clients are separate entities in nostr.
+
