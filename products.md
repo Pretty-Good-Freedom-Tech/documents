@@ -13,7 +13,7 @@ a personalized Nostr Knowledge Graph curated with the assistance of one's truste
 
 # 1. Brainstorm: Grapevine
 
-Each of Brainstorm instance is intended to calculate of baseline GrapeRank scores for a large number of customers. Its neo4j database will keep track of a large database of NostrUser nodes with FOLLOWS, MUTES, and REPORTS connections. Its memory requirements are anticipated to be expansive, making it prohibitive for the average nostr user, which is why it is designed to serve multiple paying customers. Also, it will deal in publicly available, non-sensitive information.
+Each Brainstorm instance is intended to calculate of baseline GrapeRank scores for a large number of customers. Its neo4j database will keep track of a large database of NostrUser nodes with FOLLOWS, MUTES, and REPORTS connections. Its memory requirements are anticipated to be expansive, making it prohibitive for the average nostr user, which is why it is designed to serve multiple paying customers. Also, it will deal in publicly available, non-sensitive information.
 
 ## Progress
 - prototype exists: straycat.brainstorm.social
