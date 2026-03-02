@@ -1,29 +1,26 @@
 Proposed site map for the Tapestry app
 =====
 
-- Simple Lists: baseURL/lists/index.html
-    - [View All Simple Lists](https://www.notion.so/View-Lists-2f30dd16b665802585fed7418fe2db70?pvs=21) (table)
+
+- Simple Lists: explore data from nostr, not neo4j; baseURL/lists/index.html
+    - View All Simple Lists (table)
     - Explore Single Simple List (overview)
         - View List Header (detailed view)
         - Edit List Header (if editable)
         - View List Items (table)
         - Explore single list item (overview)
             - view single list item details
-            - [view curation](https://www.notion.so/Curation-Details-of-Single-List-Item-2f50dd16b66580d7b8f6dd8a2c6275b4?pvs=21)
+            - view curation
             - edit single list item (if editable)
-        - [add new list item](https://www.notion.so/Create-New-List-Item-2f90dd16b66580698a3efa733a081789?pvs=21)
+        - add new list item
         - Curation
             - View existing Trusted List(s)
             - View curation method(s) (existing)
-            - [Manage curation](https://www.notion.so/Single-List-Edit-Curation-2ec0dd16b6658001be39ddb9bf8163e0?pvs=21)
+            - Manage curation
             - Export Trusted List
-    - [Create new Simple List](https://www.notion.so/Create-New-List-2f40dd16b665808ea88be1c600ed1f45?pvs=21)
-- Structured Lists
-    - (similar structure to Simple Lists)
-- Object-Oriented Lists
-    - (similar structure to Simple Lists)
+    - Create new Simple List
 - Concepts (includes Structured Lists and Object Oriented Lists): baseURL/concepts/index.html
-    - [View All Concepts (Table)](https://www.notion.so/View-All-Concepts-2ec0dd16b66580438fb4cae52e76a48e?pvs=21)
+    - View All Concepts (Table)
     - Explore Single Concept (overview)
         - View Canonical Concept Constituents (overview)
             - view/edit List Header node
@@ -34,7 +31,7 @@ Proposed site map for the Tapestry app
             - View single Concept Element details
             - Edit single Concept Element
         - Add new Element
-        - [View DAG Structure (graphical)](https://www.notion.so/Single-Concept-View-DAG-Structure-2ec0dd16b665801b88a1ccfdf16888ab?pvs=21)
+        - View DAG Structure (graphical)
         - View Property Tree (graphical)
         - View Auxiliary-Lists (table) (properties, subsets, elements, relationships, etc)
             - properties (overview)
@@ -77,7 +74,7 @@ Proposed site map for the Tapestry app
         - view TL (detailed)
         - single Trusted List: Manage Curation
 - Control Panels / Management
-    - [Settings](https://www.notion.so/Settings-2e50dd16b665808db316db4a61a5d0a7?pvs=21)
+    - Settings
     - NIP-85
 - About: baseURL/about
     - FAQ
